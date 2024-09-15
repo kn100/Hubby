@@ -56,3 +56,7 @@ Print wise, print however you see fit, supports aren't likely to be necessary fo
 2. Visit that IP address in your browser.
 3. Alternatively, if you wish to integrate the hub into something else (Perhaps HomeAssistant!), you can directly fire requests at <ip-address>/mac or <ip-address>/pc in order to switch between the two.
 
+## Bonus round - Using systemd inhibitor locks to automate switching the hub
+What if your personal linux machine would just switch the hub over to your Mac when it went to sleep, and yank control back by switching it back to PC when it wakes back up?
+Check out https://github.com/kn100/sleepwake/ - it does just that. You'll just need to change the IP address to whatever your hubs is, and magically you no longer even have
+to think about it anymore.
